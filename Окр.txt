@@ -1,0 +1,43 @@
+public class Main{
+public static void main(String[] args) {
+       Person masha = new Person();
+       masha.person("Masha","Female", 36);
+       masha.diffAge(38);
+       masha.print();
+       SubPerson oleg = new SubPerson();
+       oleg.person2("Oleg","Male", 40);
+       oleg.second("Stulba");
+       oleg.printtwo();
+    }
+}
+class Person{
+    String name;
+    String gender;
+    int age;
+    public void person(String name,String gender,int age){
+        this.name=name;
+        this.gender=gender;
+        this.age=age;
+        
+    }
+    public void diffAge(int age){
+        this.age=age;
+    }
+    public void print(){
+        System.out.println("Named "+name+" gender "+gender+" "+age+" old");
+    }
+}
+class SubPerson extends Person{
+    String secondName;
+   public void person2(String name,String gender,int age){
+      this.name=name;
+        this.gender=gender;
+        this.age=age; 
+   } 
+   public void second(String secondName){
+       this.secondName=secondName;
+   }
+   public void printtwo(){
+        System.out.println("Named "+name+" "+secondName+" gender "+gender+" "+age+" old");
+    }
+}
