@@ -1,4 +1,39 @@
-import java.util.Scanner;
+public class Education {
+	public static void main(String[] args) {
+	   Person masha = new Person();
+	   masha.person("Маша","Женский", 36);
+	   masha.getAge(38);
+	   masha.getSubname("Соловьёва");
+	   masha.print();
+	}
+ }
+ class Person{
+		String name;
+		String gender;
+		String subname;
+		int age; 
+  void person(String name, String gender, int age){
+	 this.name=name;
+	 this.gender=gender;
+	 this.age=age;
+ }
+ void getAge(int age){
+	 this.age=age;
+ } 
+   void getSubname(String subname){
+	  this.subname=subname;
+   }
+ 
+  
+   void print(){
+	 System.out.println("Зовут "+name+" "+subname);
+	 System.out.println("Пол "+gender);
+	 System.out.println(age+" лет"); 
+   } 
+ }
+ 
+ //Двоичный поиск в массиве
+/*import java.util.Scanner;
 public class Education {
     public static void main(String[] args) {
 		Scanner sс = new Scanner(System.in);
@@ -40,7 +75,7 @@ public class Education {
 			System.out.println("Число "+ num + " есть в массиве и находится под индексом " + index);
 		}
 	}  
-}
+}/*
 //Линейный поиск массива
    /* public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
