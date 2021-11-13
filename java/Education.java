@@ -1,5 +1,18 @@
+import java.util.Scanner;
 public class Education{
 	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String name = "";
+      while(name.isBlank()) {
+		  System.out.println("Write your name: ");
+		  name = sc.nextLine();
+		}
+		System.out.println("Hello there "+name);
+	}
+}
+
+	
+	/*public static void main(String[] args) {
 		   Person masha = new Person();
 		   masha.person("Masha","Female", 36);
 		   masha.diffAge(38);
@@ -40,7 +53,7 @@ public class Education{
 	   public void printtwo(){
 			System.out.println("Named "+name+" "+secondName+" gender "+gender+" "+age+" old");
 		}
-	}
+	}*/
 /*public class Education {
 	public static void main(String[] args) {
 	   Person masha = new Person();
