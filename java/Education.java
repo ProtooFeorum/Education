@@ -1,6 +1,38 @@
 import java.util.Scanner;
+   //Работа с функциями
 public class Education{
 	public static void main(String[] args) {
+		int a = 5;
+		sum( 4,5,2,a);
+		mult(4,5,2,a);
+		divide(4,5,2,a);
+		display("Fiodor", 45);
+	}
+    static void sum(int ...nums){
+		int result =0;
+		for (int n: nums)
+			result += n;
+		System.out.println(result);
+	}
+	static void mult(int ...nums){
+		int result =1;
+		for (int n: nums)
+			result *= n;
+		System.out.println(result);
+	}
+	static void divide(int ...nums){
+		double result =1;
+		for (int n: nums)
+			result /= n;
+		System.out.println(result);
+	}
+	static void display(String name, int age){
+		System.out.println(name);
+		System.out.println(age);
+	}
+}
+
+	/*public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String name = "";
       while(name.isBlank()) {
@@ -9,9 +41,9 @@ public class Education{
 		}
 		System.out.println("Hello there "+name);
 	}
-}
-
-	
+}*/
+ //ОКР здорового
+/*public class Education{
 	/*public static void main(String[] args) {
 		   Person masha = new Person();
 		   masha.person("Masha","Female", 36);
@@ -53,7 +85,9 @@ public class Education{
 	   public void printtwo(){
 			System.out.println("Named "+name+" "+secondName+" gender "+gender+" "+age+" old");
 		}
-	}*/
+	}
+}*/
+	//ОКР больного
 /*public class Education {
 	public static void main(String[] args) {
 	   Person masha = new Person();
